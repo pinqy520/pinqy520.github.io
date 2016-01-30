@@ -1,19 +1,16 @@
 # Site Info
 title:              "黄祺的博客"
 description:        "做一个对社会游泳的人 - 我是前端工程师"
-google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
-google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
 # Author Info
 author_name:        "Huang Qi"
 author_email:       pinqy520@foxmail.com
-author_gravatar:    none # Gravatar md5 hash
-twitter_username:   pinqy520
+author_url:         http://weibo.com/pinqy
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
 permalink:          /notes/:title # Post permalink
-timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Site Build
 highlighter:        pygments
