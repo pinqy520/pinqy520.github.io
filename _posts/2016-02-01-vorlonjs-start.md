@@ -17,7 +17,7 @@ updated: 2016-02-01 01:41
 
 ## 0x01 Vorlon.js是什么？
 
-Vorlon.js是微软在`微软Build 2015大会`上公布的一款用于JavaScript远程调试和测试的开源工具。（**大牌有保障**，写此文的时候版本是`0.1.0`）
+Vorlon.js是微软在 `微软Build 2015大会` 上公布的一款用于JavaScript远程调试和测试的开源工具。（**大牌有保障**，写此文的时候版本是 `0.1.0` ）
 
 官方网站传送门： [http://www.vorlonjs.com/](http://www.vorlonjs.com/)
 
@@ -25,28 +25,24 @@ Vorlon.js是微软在`微软Build 2015大会`上公布的一款用于JavaScript�
 
 官方原话是
 
-> 一款基于`node.js`和`socket.io`的、开源的、可扩展的、平台无关的**JavaScript远程调试和测试工具。**
+> 一款基于 `node.js` 和 `socket.io` 的、开源的、可扩展的、平台无关的**JavaScript远程调试和测试工具。**
 
 有如下优点：
 
-1. 易于安装（这个我同意，npm全局安装一下，傻瓜式操作）
-2. 多设备（大部分设备都行，不过我看ISSUE里说安卓4.0以下不行，因为不支持`socket.io`）
-3. 可扩展，有各种插件（自带了很多有用的功能，不过似乎都被算成插件了，没看见有第三方的）
+- 易于安装（这个我同意，npm全局安装一下，傻瓜式操作）
+- 多设备（大部分设备都行，不过我看ISSUE里说安卓4.0以下不行，因为不支持 `socket.io` ）
+- 可扩展，有各种插件（自带了很多有用的功能，不过似乎都被算成插件了，没看见有第三方的）
 
 
 ## 0x02 Vorlon.js怎么用？
 
 ### 安装
 
-简单：
-
 ``` bash
 $ npm install vorlon -g
 ```
 
 ### 启动
-
-简单：
 
 ``` bash
 $ vorlon
@@ -56,7 +52,7 @@ $ vorlon
 
 开启两个功能：`dashboard（控制台）` 和 `Proxy（代理）`
 
-打开 http://localhost:1337 就能看到`dashboard`了在这里面调试已经连接上的远程网页
+打开 http://localhost:1337 就能看到 `dashboard` 了在这里面调试已经连接上的远程网页
 
 打开 http://localhost:1337/httpproxy 就能用代理配置
 
