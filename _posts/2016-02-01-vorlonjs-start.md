@@ -1,6 +1,6 @@
 ---
 title: 开始使用Vorlon.js，好用的JavaScript远程调试和测试工具
-updated: 2016-02-01 01:41
+updated: 2016-02-01 20:01
 ---
 
 
@@ -70,7 +70,7 @@ $ vorlon
 
 此时鼠标hover在DOM节点上，浏览器页面中相关的区域也会高亮就和Chrome开发者工具一样：
 
-![Highlight Hover](https://i.imgur.com/x35HVhu.jpg)
+![enter image description here](https://i.imgur.com/d9f4rPI.jpg)
 
 你可以尝试在`Dashboard`中正下方的`Interactive Console`的输入框中输入`alert('test')`尝试一下，可以看到再浏览器中的页面弹出了test的框（如果你的webview没有干掉Alert功能的话）。
 
@@ -94,10 +94,12 @@ http://(your host ip):5050/vorlonproxy/root.html?vorlonproxytarget=http://www.ba
 
 ![enter image description here](https://i.imgur.com/FFBLTpZ.jpg)
 
-在输入框中输入 `http://127.0.0.1:8080/` 点击 `Inspect with VORLON.JS（注入vorlonjs脚本）` 后会弹出两个页面：一个是调试页面，
-
-> 用这种方法进行调试还是有诸多不便的
+在输入框中输入 `http://127.0.0.1:8080/` 点击 `Inspect with VORLON.JS（注入vorlonjs脚本）` 后会弹出两个页面：一个是输入的页面的转发就是上面那个`localhost:5050`的页面，还有一个是这个页面的Dashboard。
 
 ## 0x03 Vorlon.js的局限性
 
+虽然如上说了诸多Vorlon.js的好处，但是还是有很多问题没有解决。
+
 - 无法设置断点
+- 连接不稳定（也有可能是我公司的网络问题）
+- 才`0.1.0`版，给人不靠谱的感觉
