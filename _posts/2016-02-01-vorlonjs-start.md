@@ -3,6 +3,7 @@ title: 开始使用Vorlon.js，好用的JavaScript远程调试和测试工具
 updated: 2016-02-01 01:41
 ---
 
+
 ## 0x00 为什么需要远程调试？
 
 在H5的开发中可能会遇到这样的问题：
@@ -52,11 +53,51 @@ $ vorlon
 
 开启两个功能：`dashboard（控制台）` 和 `Proxy（代理）`
 
-打开 http://localhost:1337 就能看到 `dashboard` 了在这里面调试已经连接上的远程网页
+### 功能和使用
 
-打开 http://localhost:1337/httpproxy 就能用代理配置
+打开 [http://localhost:1337](http://localhost:1337) 就能看到 `dashboard` 了在这里面调试已经连接上的远程网页。
 
-### 功能
+![Vorlon.js Dashboard](https://i.imgur.com/KVegr6O.jpg)
 
+#### 在页面中植入远程调试的js
+
+``` html
+<script src="http://localhost:1337/vorlon.js"></script>
+```
+然后，在手机浏览器中打开已植入脚本的网页，可以发现在`Dashboard` 里已经出现了连接设备的信息了。
+
+![Vorlon Connect](https://i.imgur.com/st9nuIr.jpg)
+
+此时鼠标hover在DOM节点上，浏览器页面中相关的区域也会高亮就和Chrome开发者工具一样：
+
+![Highlight Hover](https://i.imgur.com/x35HVhu.jpg)
+
+你可以尝试在`Dashboard`中正下方的`Interactive Console`的输入框中输入`alert('test')`尝试一下，可以看到再浏览器中的页面弹出了test的框（如果你的webview没有干掉Alert功能的话）。
+
+#### 使用代理（vorlon proxy）自动注入脚本并调试
+
+**Vorlon Proxy**的功能是使用本地的一个接口来访问一个现存的网页，例如：我想要访问`http://127.0.0.1:8080/`，我可以通过
+
+```
+http://localhost:5050/vorlonproxy/root.html?vorlonproxytarget=http://127.0.0.1:8080/&vorlonsessionid=1270.0.1
+```
+
+ 的方式进行访问。
+
+Vorlon Proxy会转发 `http://127.0.0.1:8080/` 中的内容，并自动注入vorlon.js脚本，识别跨域资源。让你不用注入脚本也能对现有页面进行远程调试（我在手机上访问如下地址即可）。
+
+```
+http://(your host ip):5050/vorlonproxy/root.html?vorlonproxytarget=http://www.baidu.com/
+```
+
+打开 [http://localhost:1337/httpproxy](http://localhost:1337/httpproxy) 就能用代理配置的自动配置，可以看到如下输入框：
+
+![enter image description here](https://i.imgur.com/FFBLTpZ.jpg)
+
+在输入框中输入 `http://127.0.0.1:8080/` 点击 `Inspect with VORLON.JS（注入vorlonjs脚本）` 后会弹出两个页面：一个是调试页面，
+
+> 用这种方法进行调试还是有诸多不便的
 
 ## 0x03 Vorlon.js的局限性
+
+- 无法设置断点
