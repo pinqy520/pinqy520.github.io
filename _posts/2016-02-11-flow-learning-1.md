@@ -86,36 +86,34 @@ var f = function(a){
 
 ### 安装
 
-#### flow
+#### 1. 手动安装：
 
-##### 手动安装：
-
-下载：
+a. 下载：
 
 - Mac OS X: https://facebook.github.io/flow/downloads/flow-osx-latest.zip
 - Linux (64 bit): https://facebook.github.io/flow/downloads/flow-linux64-latest.zip
 
-解包：
+b. 解包：
 
 ``` bash
 $ unzip flow.zip
 ```
 
-将其中的可执行代码放入一个文件夹目录，进入目录并将其设置为环境变量：
+c. 将其中的可执行代码放入一个文件夹目录，进入目录并将其设置为环境变量：
 
 ``` bash
 $ cd flow
 $ echo -e "\nPATH=\"\$PATH:$(pwd)/\"" >> ~/.bashrc && source ~/.bashrc
 ```
 
-##### Mac中通过Homebrew安装
+#### 2. Mac中通过Homebrew安装
 
 ``` bash
 $ brew update
 $ brew install flow
 ```
 
-##### 通过npm安装`flow-bin`
+#### 3. 通过npm安装`flow-bin`
 
 ``` javascript
 $ npm install flow-bin --global
@@ -133,7 +131,16 @@ $ apm install nuclide
 
 ## 0x03 Flow的优点
 
-在未来Flow会将TypeScript中，DefinitelyTyped.org中现有的公共库的TypeScript声明文件 (.d.ts) 转换成Flow可用的。
+1.  不改变JavaScript原有特性，ES6支持。 
+
+> 就算是增加了类型声明，也是首先进行类型检查，然后通过Babel转换成没有类型声明的版本，之后就是es6或者es5的原生JavaScript代码，然后Flow也添加了ES6中新增的类型的声明和检查。
+
+2. 类型检查是选择性的
+3. 类型声明也是选择性的
+4. 在未来Flow会将TypeScript中，DefinitelyTyped.org中现有的公共库的TypeScript声明文件 (.d.ts) 转换成Flow可用的。
+5. Facebook大公司有保障，并且FB已经再其自己的项目中应用了，更新靠谱。
+
+
 
 ## 参考文献
 
