@@ -88,18 +88,18 @@ var f = function(a){
 
 #### 1. 手动安装：
 
-a. 下载：
+下载：
 
 - Mac OS X: https://facebook.github.io/flow/downloads/flow-osx-latest.zip
 - Linux (64 bit): https://facebook.github.io/flow/downloads/flow-linux64-latest.zip
 
-b. 解包：
+ 解包：
 
 ``` bash
 $ unzip flow.zip
 ```
 
-c. 将其中的可执行代码放入一个文件夹目录，进入目录并将其设置为环境变量：
+将其中的可执行代码放入一个文件夹目录，进入目录并将其设置为环境变量：
 
 ``` bash
 $ cd flow
@@ -119,9 +119,27 @@ $ brew install flow
 $ npm install flow-bin --global
 ```
 
-### 命令行使用
+### 基本使用
+
+在需要检测的文件前面加上注释`/* @flow */`：
+
+**index.js**
+
+```javascript
+/* @flow */
+```
+
+然后在目录中执行：
+
+``` bash
+$ flow
+```
+
+就可以看到检测结果了。
 
 ### 在Nuclide中使用Flow
+
+> 代码检查配合『错误提示』+『自动补全』在编辑器中使用起来很方便，更可以提高编码效率。
 
 我使用的是这种方式，也可以手动加载flow相关的atom插件。首先，在Atom中安装Nuclide：
 
