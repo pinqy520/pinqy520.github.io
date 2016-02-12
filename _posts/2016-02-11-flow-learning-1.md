@@ -90,8 +90,8 @@ var f = function(a){
 
 下载：
 
-- Mac OS X: https://facebook.github.io/flow/downloads/flow-osx-latest.zip
-- Linux (64 bit): https://facebook.github.io/flow/downloads/flow-linux64-latest.zip
+- Mac OS X: [https://facebook.github.io/flow/downloads/flow-osx-latest.zip](https://facebook.github.io/flow/downloads/flow-osx-latest.zip)
+- Linux (64 bit): [https://facebook.github.io/flow/downloads/flow-linux64-latest.zip](https://facebook.github.io/flow/downloads/flow-linux64-latest.zip)
 
  解包：
 
