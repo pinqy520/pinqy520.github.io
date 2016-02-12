@@ -3,7 +3,7 @@ title: Flow教程 (1) - 简介和开始
 updated: 2016-02-11 02:04
 ---
 
-> 之前在项目中用了TypeScript进行编写，并用了Atom里的atom-typescript插件。感觉强类型所带来的代码提示和IDE纠错功能真心非常好用，想作为主要语言来学习。可是在用惯了babeljs配合ES6里的一些方便的特性，例如：Promise等之后，使用TypeScript还是有点不太习惯，于是选择了Flow（[官网传送门](http://flowtype.org)）。
+> 之前在项目中用了TypeScript进行编写，并用了Atom里的atom-typescript插件。感觉类型声明所带来的代码提示和IDE纠错功能真心非常好用，想作为主要语言来学习。可是在用惯了babeljs配合ES6里的一些方便的特性，例如：Promise等之后，使用TypeScript还是有点不太习惯，于是选择了Flow（[官网传送门](http://flowtype.org)）。
 
 ## 0x00 什么是Flow [[传送门](http://flowtype.org/docs/about-flow.html)]
 
@@ -127,6 +127,8 @@ $ npm install flow-bin --global
 
 ```javascript
 /* @flow */
+
+// your javascript/flow code
 ```
 
 然后在目录中执行：
@@ -141,11 +143,25 @@ $ flow
 
 > 代码检查配合『错误提示』+『自动补全』在编辑器中使用起来很方便，更可以提高编码效率。
 
-我使用的是这种方式，也可以手动加载flow相关的atom插件。首先，在Atom中安装Nuclide：
+我使用的是这种方式，也可以手动加载flow相关的atom插件。
+
+- 在Atom中安装Nuclide：
 
 ``` bash
 $ apm install nuclide
 ```
+
+- 在根目录添加一个空的`.flowconfig`文件
+
+- 在需要检测的文件最前面加上注释`/* @flow */`
+
+代码检查：
+
+![Nuclide代码检查](https://i.imgur.com/GloxVNs.gif)
+
+代码提示自动补全：
+
+![Nuclide自动补全](https://i.imgur.com/5ZyYscB.gif)
 
 ## 0x03 Flow的优点
 
