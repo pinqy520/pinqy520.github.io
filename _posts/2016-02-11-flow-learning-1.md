@@ -163,7 +163,216 @@ $ apm install nuclide
 
 ![Nuclide自动补全](https://i.imgur.com/5ZyYscB.gif)
 
-## 0x03 Flow的优点
+## 0x03 通过官方的例子进一步了解一下
+
+### 1. Hello Flow
+
+> `/* @flow */`很重要，再文件中添加这段注释，告诉Flow，该文件是需要进行类型检测。
+
+**`hello.js`**
+
+``` javascript
+/* @flow */
+
+function foo(x) {
+  return x * 10;
+}
+
+foo('Hello, world!');
+```
+
+``` bash
+$ flow
+
+hello.js:7
+  7: foo("Hello, world!");
+     ^^^^^^^^^^^^^^^^^^^^ function call
+  4:   return x*10;
+              ^ string. This type is incompatible with
+  4:   return x*10;
+              ^^^^ number
+```
+
+因为字符型没有乘法，所以报错，改成下面这种就不会了：
+
+``` javascript
+/* @flow */
+
+function foo(x) {
+  return x * 10;
+}
+
+// This is fine, because we're passing a number now
+foo(10);
+```
+
+### 2. 增加类型声明
+
+> 类型检测中，Flow能推断出一个文件中的许多东西，所以，你不必去声明每一个函数和变量。不过，即使Flow能够推断一个类型，你也仍然可以给其加上明确的声明。
+
+**`type_annotations.js`**
+
+``` javascript
+/* @flow */
+
+function foo(x: string, y: number): string {
+  return x.length * y;
+}
+
+foo('Hello', 42);
+```
+
+``` bash
+$ flow
+
+type_annotations.js:4
+  4:   return x.length * y;
+              ^^^^^^^^^^^^ number. This type is incompatible with
+  3: function foo(x: string, y: number): string {
+                                         ^^^^^^ string
+```
+
+因为例子中声明的函数`foo`的返回类型是`string`，而两个`number`类型变量相乘的结果为`number`，因此报错。改成下面这样就行~：
+
+``` javascript
+/* @flow */
+
+// Changing the return type to number fixes the error
+function foo(x: string, y: number): number {
+  return x.length * y;
+}
+
+foo('Hello', 42);
+```
+
+### 3. 可为空的类型
+
+> 大多数类型系统会忽略`null`的情况，而Flow不会，当程序会可能会因为`null`造成crash的情况里，Flow进行类型检查时也会发现。
+
+**`nulls.js`**
+
+``` javascript
+/* @flow */
+
+function length(x) {
+  return x.length;
+}
+
+var total = length('Hello') + length(null);
+```
+
+``` bash
+$ flow
+
+nulls.js:7
+  7: var total = length("Hello") + length(null);
+                                   ^^^^^^^^^^^^ function call
+  4:   return x.length;
+                ^^^^^^ property `length`. Property cannot be accessed on possibly null value
+  4:   return x.length;
+              ^ null
+```
+
+因为在函数`length`中，并没有对没有`length`属性的传参进行判断，因此，当传入参数为`null`时，就会产生错误，Flow会在检查时发现这种错误。当对这种情况再函数中进行判断之后，Flow就会检查通过了：
+
+``` javascript
+/* @flow */
+
+function length(x) {
+  if (x !== null) {
+    return x.length;
+  } else {
+    return 0;
+  }
+}
+
+var total = length('Hello') + length(null);
+```
+
+Flow会根据函数中的具体情况进行类型检查，下面例5中也有体现。
+
+### 4. 数组
+
+**`arrays.js`**
+
+``` javascript
+/* @flow */
+
+function total(numbers: Array<number>) {
+  var result = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+  return result;
+}
+
+total([1, 2, 3, 'Hello']);
+```
+
+``` bash
+$ flow
+
+arrays.js:11
+ 11: total([1, 2, 3, "Hello"]);
+     ^^^^^^^^^^^^^^^^^^^^^^^^^ function call
+ 11: total([1, 2, 3, "Hello"]);
+                     ^^^^^^^ string. This type is incompatible with
+  3: function total(numbers: Array<number>) {
+                                   ^^^^^^ number
+```
+
+因为明明声明的是`number`的`Array`。
+
+``` javascript
+total([1, 2, 3, 4]);
+```
+
+### 5. 动态代码
+
+> 例3中已经有所体现，Flow能根据函数内的具体情况，进行类型判断。
+
+**`dynamic.js`**
+
+``` javascript
+/* @flow */
+
+function foo(x) {
+  return x.length;
+}
+
+var res = foo('Hello') + foo(42);
+```
+
+``` bash
+$ flow
+
+dynamic.js:4
+  4:   return x.length;
+              ^^^^^^^^ property `length`
+  4:   return x.length;
+                ^^^^^^ property `length`. Property not found in
+  4:   return x.length;
+              ^ Number
+```
+
+加上一个`if`判断就行了
+
+``` javascript
+/* @flow */
+
+function foo(x) {
+  if (typeof x === 'string') {
+    return x.length;
+  } else {
+    return x;
+  }
+}
+
+var res = foo('Hello') + foo(42);
+```
+
+
+## 0x04 Flow的优点
 
 1.  不改变JavaScript原有特性，ES6支持。 
 
