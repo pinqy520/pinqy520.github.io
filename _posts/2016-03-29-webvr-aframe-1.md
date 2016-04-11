@@ -11,6 +11,8 @@ updated: 2016-03-29 21:03
 
 在入门WebVR之前，我也决定将AFrame作为我了解WebVR的第一步。
 
+[DEMO入口（手机safari中打开）](http://www.pinqy.cn/demo/hello-vr/)
+
 ## 0x01 AFrame
 
 ### 简介
