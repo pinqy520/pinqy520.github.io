@@ -1,6 +1,5 @@
 ---
 title: 开始使用Vorlon.js，好用的JavaScript远程调试和测试工具
-date: 2016-02-01 20:01
 updated: 2016-02-01 20:01
 ---
 
