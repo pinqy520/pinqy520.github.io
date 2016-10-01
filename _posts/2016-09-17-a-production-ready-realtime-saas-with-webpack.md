@@ -39,9 +39,6 @@ updated: 2016-09-17 01:49
 我假设你已经设置好了一个开发用的webpack配置，如果你不知道如何创建一个开发配置......
 
 
-![嘿嘿嘿](http://upload-images.jianshu.io/upload_images/1555399-471cb2ab9cb98520.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
 ### 使用路由来拆分你的页面
 
 第一步先处理路由，然后让你的同步组件异步处理。参考这个[例子](https://github.com/mattkrick/meatier/blob/master/src/universal/routes/signup.js)。

@@ -32,7 +32,7 @@ updated: 2016-09-17 22:00
 
 在React中，一个页面是由若干个嵌套的组件构成，每个组件都有相应的数据输入，最终这些数据输入可以反映成一个树状结构，最后我们直观的使用这个树状结构到state树上，就如下图所示。
 
-![page based state.png](http://upload-images.jianshu.io/upload_images/1555399-075f237a1bffc8dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![page based state.png](http://oaqwb2jy9.bkt.clouddn.com/pinqy/static/page%20base%20state.png)
 
 
 
@@ -43,7 +43,7 @@ updated: 2016-09-17 22:00
 
 **重复页面倒退**是指如下这种情况：
 
-![wenti1.png](http://upload-images.jianshu.io/upload_images/1555399-1a6c262a5a9401a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![wenti1.png](http://oaqwb2jy9.bkt.clouddn.com/pinqy/static/wenti1.png)
 
 假设这种情况：在React Native和Redux构建的一个App中，我们从首页feed流进入某个id为1的文章的详情页，从详情页进入了某个推荐列表，然后又从这个推荐列表进入了另一个id为2的文章的详情页。
 
@@ -87,7 +87,7 @@ Mobx实际上是为了解决这样麻烦的reducer而产生的，直接让action
 
 https://mobxjs.github.io/mobx/
 
-![flow.png](http://upload-images.jianshu.io/upload_images/1555399-640bfbaf377e2c30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![flow.png](https://mobxjs.github.io/mobx/docs/flow.png)
 
 
 如此，我们就不必在意页面取什么数据了，store就看成数据库，使用mobx提供的asMap生成按照id -> value的键值对来处理不同id的同种数据。
