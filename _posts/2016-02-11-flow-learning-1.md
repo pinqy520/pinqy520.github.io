@@ -88,12 +88,11 @@ var f = function(a){
 
 #### 1. 手动安装：
 
-下载：
+> 建议直接用`brew`和`npm`安装。
 
-- Mac OS X: [https://facebook.github.io/flow/downloads/flow-osx-latest.zip](https://facebook.github.io/flow/downloads/flow-osx-latest.zip)
-- Linux (64 bit): [https://facebook.github.io/flow/downloads/flow-linux64-latest.zip](https://facebook.github.io/flow/downloads/flow-linux64-latest.zip)
+下载：[地址传送门](https://github.com/facebook/flow/releases)
 
- 解包：
+解包：
 
 ``` bash
 $ unzip flow.zip
@@ -162,6 +161,10 @@ $ apm install nuclide
 代码提示自动补全：
 
 ![Nuclide自动补全](https://i.imgur.com/5ZyYscB.gif)
+
+### VS Code
+
+在VS Code中安装官方提供的Flow Language Support。（博主已转战VSCODE）
 
 ## 0x03 通过官方的例子进一步了解一下
 
@@ -375,13 +378,7 @@ var res = foo('Hello') + foo(42);
 ## 0x04 Flow的优点
 
 1.  不改变JavaScript原有特性，ES6支持。 
-
-> 就算是增加了类型声明，也是首先进行类型检查，然后通过Babel转换成没有类型声明的版本，之后就是es6或者es5的原生JavaScript代码，然后Flow也添加了ES6中新增的类型的声明和检查。
-
-2. 类型检查是选择性的
-3. 类型声明也是选择性的
-4. 在未来Flow会将TypeScript中，DefinitelyTyped.org中现有的公共库的TypeScript声明文件 (.d.ts) 转换成Flow可用的。
-5. Facebook大公司有保障，并且FB已经再其自己的项目中应用了，更新靠谱。
+2.  无痛转成ES6 ES5，（主要针对，很多情况下TS需要先转成ES6再用Babel转成ES5）
 
 
 
