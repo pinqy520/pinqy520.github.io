@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/demo/revas-pwa/precache-manifest.64d3582206f047ec8f90ff7564c598b3.js"
+  "/demo/revas-pwa/precache-manifest.82938222c0dc06ef694af51be0f987c2.js"
 );
 
 self.addEventListener('message', (event) => {
