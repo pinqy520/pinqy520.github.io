@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/demo/revas-pwa/static/css/main.47e655d9.chunk.css",
-    "main.js": "/demo/revas-pwa/static/js/main.30e1e1f2.chunk.js",
-    "main.js.map": "/demo/revas-pwa/static/js/main.30e1e1f2.chunk.js.map",
+    "main.js": "/demo/revas-pwa/static/js/main.f210d156.chunk.js",
+    "main.js.map": "/demo/revas-pwa/static/js/main.f210d156.chunk.js.map",
     "runtime-main.js": "/demo/revas-pwa/static/js/runtime-main.d943534b.js",
     "runtime-main.js.map": "/demo/revas-pwa/static/js/runtime-main.d943534b.js.map",
     "static/js/2.5e7cd0c2.chunk.js": "/demo/revas-pwa/static/js/2.5e7cd0c2.chunk.js",
     "static/js/2.5e7cd0c2.chunk.js.map": "/demo/revas-pwa/static/js/2.5e7cd0c2.chunk.js.map",
     "index.html": "/demo/revas-pwa/index.html",
-    "precache-manifest.9cd3178f0d6cb145f2434e9748f8f0b2.js": "/demo/revas-pwa/precache-manifest.9cd3178f0d6cb145f2434e9748f8f0b2.js",
+    "precache-manifest.bf9bdf0b51d663bea32b3a6a3d0213b0.js": "/demo/revas-pwa/precache-manifest.bf9bdf0b51d663bea32b3a6a3d0213b0.js",
     "service-worker.js": "/demo/revas-pwa/service-worker.js",
     "static/css/main.47e655d9.chunk.css.map": "/demo/revas-pwa/static/css/main.47e655d9.chunk.css.map",
     "static/media/logo.png": "/demo/revas-pwa/static/media/logo.48529616.png"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d943534b.js",
     "static/js/2.5e7cd0c2.chunk.js",
     "static/css/main.47e655d9.chunk.css",
-    "static/js/main.30e1e1f2.chunk.js"
+    "static/js/main.f210d156.chunk.js"
   ]
 }
