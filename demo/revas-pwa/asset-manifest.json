@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/demo/revas-pwa/static/css/main.47e655d9.chunk.css",
-    "main.js": "/demo/revas-pwa/static/js/main.d40531b8.chunk.js",
-    "main.js.map": "/demo/revas-pwa/static/js/main.d40531b8.chunk.js.map",
+    "main.js": "/demo/revas-pwa/static/js/main.b5c9ab50.chunk.js",
+    "main.js.map": "/demo/revas-pwa/static/js/main.b5c9ab50.chunk.js.map",
     "runtime-main.js": "/demo/revas-pwa/static/js/runtime-main.d943534b.js",
     "runtime-main.js.map": "/demo/revas-pwa/static/js/runtime-main.d943534b.js.map",
     "static/js/2.eb48a552.chunk.js": "/demo/revas-pwa/static/js/2.eb48a552.chunk.js",
     "static/js/2.eb48a552.chunk.js.map": "/demo/revas-pwa/static/js/2.eb48a552.chunk.js.map",
     "index.html": "/demo/revas-pwa/index.html",
-    "precache-manifest.b83e007c77429f29f41e19a708da594a.js": "/demo/revas-pwa/precache-manifest.b83e007c77429f29f41e19a708da594a.js",
+    "precache-manifest.db36a4718aadf62976ff66b01d054289.js": "/demo/revas-pwa/precache-manifest.db36a4718aadf62976ff66b01d054289.js",
     "service-worker.js": "/demo/revas-pwa/service-worker.js",
     "static/css/main.47e655d9.chunk.css.map": "/demo/revas-pwa/static/css/main.47e655d9.chunk.css.map",
-    "static/media/1.mp3": "/demo/revas-pwa/static/media/1.517017dd.mp3",
-    "static/media/2.mp3": "/demo/revas-pwa/static/media/2.c32162dd.mp3",
-    "static/media/3.mp3": "/demo/revas-pwa/static/media/3.e875c7dc.mp3",
-    "static/media/4.mp3": "/demo/revas-pwa/static/media/4.34c9811b.mp3",
-    "static/media/5.mp3": "/demo/revas-pwa/static/media/5.3fa3b12f.mp3",
-    "static/media/6.mp3": "/demo/revas-pwa/static/media/6.3494ee05.mp3",
+    "static/media/1.mp4": "/demo/revas-pwa/static/media/1.3053e405.mp4",
+    "static/media/2.mp4": "/demo/revas-pwa/static/media/2.3f38bebe.mp4",
+    "static/media/3.mp4": "/demo/revas-pwa/static/media/3.88e77052.mp4",
+    "static/media/4.mp4": "/demo/revas-pwa/static/media/4.4570cc8a.mp4",
+    "static/media/5.mp4": "/demo/revas-pwa/static/media/5.266886b6.mp4",
+    "static/media/6.mp4": "/demo/revas-pwa/static/media/6.aec7d684.mp4",
     "static/media/7.mp4": "/demo/revas-pwa/static/media/7.0f599cec.mp4",
     "static/media/logo.png": "/demo/revas-pwa/static/media/logo.48529616.png"
   },
@@ -24,6 +24,6 @@
     "static/js/runtime-main.d943534b.js",
     "static/js/2.eb48a552.chunk.js",
     "static/css/main.47e655d9.chunk.css",
-    "static/js/main.d40531b8.chunk.js"
+    "static/js/main.b5c9ab50.chunk.js"
   ]
 }
