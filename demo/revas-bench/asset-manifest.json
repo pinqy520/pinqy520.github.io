@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/demo/revas-bench/static/css/main.134c24ad.chunk.css",
+    "main.js": "/demo/revas-bench/static/js/main.490e5fef.chunk.js",
+    "main.js.map": "/demo/revas-bench/static/js/main.490e5fef.chunk.js.map",
+    "runtime-main.js": "/demo/revas-bench/static/js/runtime-main.0a404b6b.js",
+    "runtime-main.js.map": "/demo/revas-bench/static/js/runtime-main.0a404b6b.js.map",
+    "static/js/2.f1cad380.chunk.js": "/demo/revas-bench/static/js/2.f1cad380.chunk.js",
+    "static/js/2.f1cad380.chunk.js.map": "/demo/revas-bench/static/js/2.f1cad380.chunk.js.map",
+    "index.html": "/demo/revas-bench/index.html",
+    "precache-manifest.d4ba49013a8d155e8da953ef05aa5de4.js": "/demo/revas-bench/precache-manifest.d4ba49013a8d155e8da953ef05aa5de4.js",
+    "service-worker.js": "/demo/revas-bench/service-worker.js",
+    "static/css/main.134c24ad.chunk.css.map": "/demo/revas-bench/static/css/main.134c24ad.chunk.css.map",
+    "static/js/2.f1cad380.chunk.js.LICENSE.txt": "/demo/revas-bench/static/js/2.f1cad380.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a404b6b.js",
+    "static/js/2.f1cad380.chunk.js",
+    "static/css/main.134c24ad.chunk.css",
+    "static/js/main.490e5fef.chunk.js"
+  ]
+}
