@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee3460a4670e1ed4667bc708d3cdbdf1",
+    "revision": "a7a476c28a3fb95a8af0032c993aeb30",
     "url": "/demo/revas-pwa/index.html"
   },
   {
-    "revision": "510c886b14149cdd5cf01092e655490d",
-    "url": "/demo/revas-pwa/node_modules/yoga-wasm/build/yoga.dilnCA.wasm"
+    "revision": "0aacf8d0eb8d23705eee42503f400c7c",
+    "url": "/demo/revas-pwa/node_modules/yoga-layout-wasm/dist/yoga.1Y340_.wasm"
   },
   {
-    "revision": "c30ee65bbdbe22ca3be1",
+    "revision": "79f9a51d57aac4970640e573b79d9885",
+    "url": "/demo/revas-pwa/node_modules/yoga-layout-wasm/dist/yoga.wasm.25C9ST.js"
+  },
+  {
+    "revision": "e6e7bf5a754616a5c056",
     "url": "/demo/revas-pwa/static/css/main.9d1527d3.chunk.css"
   },
   {
-    "revision": "d5fc8c9fd944f0b43c3b",
-    "url": "/demo/revas-pwa/static/js/2.43bc0786.chunk.js"
+    "revision": "83d520fe1a70237fd394",
+    "url": "/demo/revas-pwa/static/js/2.7b082bbe.chunk.js"
   },
   {
-    "revision": "c30ee65bbdbe22ca3be1",
-    "url": "/demo/revas-pwa/static/js/main.16b50f87.chunk.js"
+    "revision": "e6e7bf5a754616a5c056",
+    "url": "/demo/revas-pwa/static/js/main.98208fd0.chunk.js"
   },
   {
-    "revision": "d34891881953f6fa8bcd",
-    "url": "/demo/revas-pwa/static/js/runtime-main.d943534b.js"
+    "revision": "ba57cd1cdbf565900ee9",
+    "url": "/demo/revas-pwa/static/js/runtime-main.d41b2cc0.js"
   },
   {
     "revision": "3053e405cadeecd1719b3498f17f79e8",

@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/demo/revas-pwa/static/css/main.9d1527d3.chunk.css",
-    "main.js": "/demo/revas-pwa/static/js/main.16b50f87.chunk.js",
-    "main.js.map": "/demo/revas-pwa/static/js/main.16b50f87.chunk.js.map",
-    "runtime-main.js": "/demo/revas-pwa/static/js/runtime-main.d943534b.js",
-    "runtime-main.js.map": "/demo/revas-pwa/static/js/runtime-main.d943534b.js.map",
-    "static/js/2.43bc0786.chunk.js": "/demo/revas-pwa/static/js/2.43bc0786.chunk.js",
-    "static/js/2.43bc0786.chunk.js.map": "/demo/revas-pwa/static/js/2.43bc0786.chunk.js.map",
+    "main.js": "/demo/revas-pwa/static/js/main.98208fd0.chunk.js",
+    "main.js.map": "/demo/revas-pwa/static/js/main.98208fd0.chunk.js.map",
+    "runtime-main.js": "/demo/revas-pwa/static/js/runtime-main.d41b2cc0.js",
+    "runtime-main.js.map": "/demo/revas-pwa/static/js/runtime-main.d41b2cc0.js.map",
+    "static/js/2.7b082bbe.chunk.js": "/demo/revas-pwa/static/js/2.7b082bbe.chunk.js",
+    "static/js/2.7b082bbe.chunk.js.map": "/demo/revas-pwa/static/js/2.7b082bbe.chunk.js.map",
     "index.html": "/demo/revas-pwa/index.html",
-    "node_modules/yoga-wasm/build/yoga.wasm": "/demo/revas-pwa/node_modules/yoga-wasm/build/yoga.dilnCA.wasm",
-    "precache-manifest.10736569a71981a571c0f9027d03e5c9.js": "/demo/revas-pwa/precache-manifest.10736569a71981a571c0f9027d03e5c9.js",
+    "node_modules/yoga-layout-wasm/dist/yoga.wasm": "/demo/revas-pwa/node_modules/yoga-layout-wasm/dist/yoga.1Y340_.wasm",
+    "node_modules/yoga-layout-wasm/dist/yoga.wasm.js": "/demo/revas-pwa/node_modules/yoga-layout-wasm/dist/yoga.wasm.25C9ST.js",
+    "precache-manifest.943d7b61acceccb83f5cf7319d9a98b0.js": "/demo/revas-pwa/precache-manifest.943d7b61acceccb83f5cf7319d9a98b0.js",
     "service-worker.js": "/demo/revas-pwa/service-worker.js",
     "static/css/main.9d1527d3.chunk.css.map": "/demo/revas-pwa/static/css/main.9d1527d3.chunk.css.map",
     "static/media/1.mp4": "/demo/revas-pwa/static/media/1.3053e405.mp4",
@@ -22,9 +23,9 @@
     "static/media/logo.png": "/demo/revas-pwa/static/media/logo.48529616.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d943534b.js",
-    "static/js/2.43bc0786.chunk.js",
+    "static/js/runtime-main.d41b2cc0.js",
+    "static/js/2.7b082bbe.chunk.js",
     "static/css/main.9d1527d3.chunk.css",
-    "static/js/main.16b50f87.chunk.js"
+    "static/js/main.98208fd0.chunk.js"
   ]
 }
