@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/demo/revas-three/static/css/main.21e1a86f.chunk.css",
+    "main.js": "/demo/revas-three/static/js/main.436a5ce5.chunk.js",
+    "main.js.map": "/demo/revas-three/static/js/main.436a5ce5.chunk.js.map",
+    "runtime-main.js": "/demo/revas-three/static/js/runtime-main.7a1c461c.js",
+    "runtime-main.js.map": "/demo/revas-three/static/js/runtime-main.7a1c461c.js.map",
+    "static/js/2.335c7e88.chunk.js": "/demo/revas-three/static/js/2.335c7e88.chunk.js",
+    "static/js/2.335c7e88.chunk.js.map": "/demo/revas-three/static/js/2.335c7e88.chunk.js.map",
+    "index.html": "/demo/revas-three/index.html",
+    "precache-manifest.3ae3c4b5c590d8831a2266b6548327be.js": "/demo/revas-three/precache-manifest.3ae3c4b5c590d8831a2266b6548327be.js",
+    "service-worker.js": "/demo/revas-three/service-worker.js",
+    "static/css/main.21e1a86f.chunk.css.map": "/demo/revas-three/static/css/main.21e1a86f.chunk.css.map",
+    "static/js/2.335c7e88.chunk.js.LICENSE.txt": "/demo/revas-three/static/js/2.335c7e88.chunk.js.LICENSE.txt",
+    "static/media/Flamingo.glb": "/demo/revas-three/static/media/Flamingo.59fbc934.glb"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a1c461c.js",
+    "static/js/2.335c7e88.chunk.js",
+    "static/css/main.21e1a86f.chunk.css",
+    "static/js/main.436a5ce5.chunk.js"
+  ]
+}
